@@ -28,6 +28,7 @@
     -webkit-font-smoothing: antialiased;
     font-family: "Roboto", sans-serif;
     background-color: var(--cor-menu);
+    line-height:1.2;
   }
   /*
     5. Improve media defaults
@@ -49,8 +50,7 @@
     overflow-wrap: break-word;
   }
   h1, h2, h3 {
-    max-width: 600px;
-    font-size: calc(36 / 16 * 1rem);  
+
   }
   /*
     8. Create a root stacking context
@@ -58,14 +58,37 @@
   #root, #__next {
     isolation: isolate;
   }
-
+  h1{
+    font-size: calc(36 / 16 * 1rem); 
+  }
+  p{
+    margin: 20px;
+  }
+  a{
+    display: inline-block;
+    text-decoration: none;
+  }
   .intro {
     font-family: "Kanit", sans-serif;
-    
     margin: 0;
     padding: 40px;
-    
 
     color: var(--cor-titulo2);
   }
 
+  .btn__sobre {
+    color: white;
+    border: 1px solid #23B2EB;
+    padding: 6px 12px;
+    border-radius: 5px;
+
+    transition: 250ms;
+  }
+
+  .btn__sobre:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--cor-titulo1);
+    border: none;
+    transition: 150ms;
+  }

@@ -11,7 +11,7 @@
         <p>
             Onde você encontra a maior e mais completa linha de produtos para elevar seu nível.
         </p>
-        <a class="" href="">sobre</a>
+        <a class="btn__sobre" href="">sobre</a>
     </div>
 </section>
 
@@ -23,19 +23,21 @@
 
         display: grid;
         align-items: center;
+        justify-content: start;
         position: relative;
+        
     }
     .intro::after {
         content: "";
         position: absolute;
         inset: 0;
         background-color: rgba(0,0,0,0.40);
+        
     }
 
-    .wrap {
+    .intro__wrapper {
     z-index: 1;
-    display: grid;
-    align-items: center;
-    justify-content: start;
+    max-width: 600px;
   }
+
 </style>
