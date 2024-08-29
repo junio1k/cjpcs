@@ -1,5 +1,6 @@
 <script>
-    import imgIntroducao from "../assets/introducao.jpg"
+    import imgIntroducao from "$lib/assets/introducao.jpg";
+    import icon from "$lib/assets/introducao.jpg"; 
 </script>
 
 
