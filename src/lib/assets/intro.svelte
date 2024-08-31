@@ -1,24 +1,29 @@
 <script>
     import imgIntroducao from "$lib/assets/introducao.jpg";
+    import imgmonteseupc from "$lib/assets/monteseupc.jpg"
     import icon from "$lib/assets/introducao.jpg"; 
 
     export let tittle;
-    export let imgIntro;
-    if (imgIntro === "introducao") imgIntro = imgIntroducao;
+    export let content;
+    export let img;
+    if (img === "introducao") img = imgIntroducao;
+    if(img === "monteSeuPC") img = imgmonteseupc;
     export let href; 
     export let btn; 
 </script>
 
 
-<section class="intro" style="background-image: url({imgIntro});">
+<section class="intro" style="background-image: url({img});">
     <div class="intro__wrapper wrap">
         <h1>
             {tittle}
         </h1>
         <p>
-            Onde você encontra a maior e mais completa linha de produtos para elevar seu nível.
+           {content}
         </p>
+        {#if href && btn}
         <a class="btn__sobre" href= {href}>{btn}</a>
+        {/if}
     </div>
 </section>
 
